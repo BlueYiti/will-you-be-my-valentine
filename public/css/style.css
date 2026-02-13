@@ -41,11 +41,16 @@ body {
     background-color: green;
     cursor: pointer;
     height: 40px;
+    transition: width 0.3s ease, height 0.3s ease, transform 0.2s ease;
 
     p {
         margin: 0;
         object-fit: contain;
     }
+}
+
+#yes-button:hover {
+    transform: scale(1.05);
 }
 
 /* Make responsive for mobile */
@@ -78,27 +83,6 @@ body {
         width: auto;
         height: 250px;
     }
-}
-
-.language-selector {
-    margin-top: 30px;
-    position: unset;
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.language-selector label {
-    margin-right: 10px;
-}
-
-.language-selector select {
-    padding: 5px;
-    border: 1px solid #ccc;
-    font-size: 16px;
 }
 
 .creator {
