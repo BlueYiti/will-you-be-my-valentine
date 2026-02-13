@@ -74,6 +74,10 @@ yes_button.addEventListener('click', () => {
     banner.src = "public/images/yes.gif";
     refreshBanner();
 
+    // 🔊 Play sound
+    const sound = document.getElementById('yes-sound');
+    sound.play();
+
     document.querySelector('.buttons').style.display = "none";
     document.querySelector('.message').style.display = "block";
 });
